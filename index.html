@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html data-bs-theme="light" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portafolio - CharlesLettuce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <style>
-        .placeholder-img {
-            width: 100%;
-            height: 200px;
-            background-color: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6c757d;
+        body {
+            background: #f0f0f0;
+            font-family: 'Fira Code', monospace;
+        }
+        .section-title {
             font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .rounded-circle {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="text-center my-5">
-            <h1>Nombre</h1>
-            <p>Lamento no tener la página visible en este momento. Estoy trabajando en ello para que sea muy profesional.</p>
-        </header>
-        <footer class="text-center my-5">
-            <p>Mientras tanto, puedes <a href="https://1v1.lol">jugar un rato aquí</a>.</p>
-        </footer>
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-10 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-md-4 col-12 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                        <img class="border rounded-circle" src="https://avatars.githubusercontent.com/u/116301628?v=4" alt="CharlesLettuce">
+                    </div>
+                    <div class="col-md-8 col-sm-12 d-flex align-items-center justify-content-center">
+                        <h1 class="fs-1 text-black">CharlesLettuce</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-sm-12 col-12">
+                <h2 class="section-title text-black">Acerca de mí</h2>
+                <p>Me llamo Carlos Echeverria, tengo 22 años y me gusta lo simple. Soy un desarrollador web apasionado por la tecnología y estudiante junior de segundo año de ingeniería en informática en DuocUC. Me gusta estar ocupado haciendo proyectos, y siempre aprendo algo nuevo, incluso cuando las cosas no salen como esperaba. Desde pequeño, la tecnología ha sido mi pasión y disfruto resolver problemas y entender cómo funcionan las cosas.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10 col-sm-12 col-12">
+                <h2 class="section-title text-black">Habilidades</h2>
+                <ul>
+                    <li>Frontend: Bootstrap, Ionic</li>
+                    <li>Backend: Django</li>
+                    <li>Bases de datos: Oracle</li>
+                    <li>Lenguajes: Python (nivel junior)</li>
+                    <li>Intereses adicionales: Hackintosh</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10 col-sm-12 col-12">
+                <h2 class="section-title text-black">Proyectos</h2>
+                <p><strong>RegistrAPP:</strong> Actualmente trabajando en un proyecto para mi clase de aplicaciones móviles, una aplicación de registro llamada RegistrAPP. Puedes ver el proyecto en mi <a href="https://github.com/CharlesLettuce/RegistrAPP" target="_blank">GitHub</a>.</p>
+                <p><strong>Portafolio personal:</strong> Este mismo portafolio es parte de mis proyectos, construido utilizando Bootstrap y otras tecnologías frontend.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10 col-sm-12 col-12">
+                <h2 class="section-title text-black">Contacto</h2>
+                <p>Si quieres saber más sobre mis proyectos o trabajar conmigo, no dudes en contactarme:</p>
+                <ul>
+                    <li>Email: <a href="mailto:carlos.echeverria.moscoso@gmail.com">carlos.echeverria.moscoso@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/CharlesLettuce" target="_blank">CharlesLettuce</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
