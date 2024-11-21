@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container mt-5 mb-5 mx-3 mx-md-0"></div>
+    <div class="container mt-5 mb-5 mx-3 mx-md-0">
         <div class="row justify-content-center mb-4">
             <div class="col-md-10 col-sm-12 col-12">
                 <div class="row">
@@ -67,7 +67,39 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Sección oculta para mostrar la base de datos -->
+        <div id="db-section" class="d-none">
+            <h2 class="text-center">Usuarios</h2>
+            <div id="usuarios" class="mt-4"></div>
+        </div>
     </div>
+
+    <script>
+        async function fetchUsuarios() {
+            const response = await fetch('https://charleslettuce.me/bd/usuarios');
+            const usuarios = await response.json();
+            const usuariosDiv = document.getElementById('usuarios');
+            usuariosDiv.innerHTML = ''; // Clear previous content
+            usuarios.forEach(usuario => {
+                const usuarioDiv = document.createElement('div');
+                usuarioDiv.className = 'card mb-3';
+                usuarioDiv.innerHTML = `
+                    <div class="card-body">
+                        <h5 class="card-title">${usuario.usuario}</h5>
+                        <p class="card-text">Rol: ${usuario.rol}</p>
+                    </div>
+                `;
+                usuariosDiv.appendChild(usuarioDiv);
+            });
+        }
+
+        // Mostrar la sección de base de datos si la URL es /bd
+        if (window.location.pathname === '/bd') {
+            document.getElementById('db-section').classList.remove('d-none');
+            fetchUsuarios();
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
