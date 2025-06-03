@@ -1,106 +1,151 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Carlos Echeverría Moscoso, desarrollador web y programador con experiencia en frontend y backend.">
-    <title>Carlos Echeverría Moscoso - Desarrollador Web</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Echeverría Moscoso - Desarrollador Web</title>
+  <style>
+    :root {
+      --primary-color: #333;
+      --bg-color: #f4f4f4;
+      --card-bg: #fff;
+      --accent: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background-color: var(--bg-color);
+      color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      max-width: 720px;
+      width: 100%;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1rem;
+      border: 3px solid var(--accent);
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 0.25rem 0;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.25rem;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    p, li {
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      .avatar {
+        width: 90px;
+        height: 90px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container mt-5 mb-5 mx-3 mx-md-0">
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-10 col-sm-12 col-12">
-                <div class="row">
-                    <div class="col-md-4 col-12 d-flex justify-content-center align-items-center mb-3 mb-md-0">
-                        <img class="border rounded-circle" src="https://avatars.githubusercontent.com/u/116301628?v=4" alt="Carlos Echeverría Moscoso">
-                    </div>
-                    <div class="col-md-8 col-sm-12 d-flex align-items-center justify-content-center">
-                        <h1 class="fs-1 text-black text-center">Carlos Echeverría Moscoso</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <img src="https://avatars.githubusercontent.com/u/116301628?v=4" alt="Carlos Echeverría Moscoso" class="avatar">
+    <h1>Carlos Echeverría Moscoso</h1>
+    <h2>Desarrollador Web</h2>
 
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-sm-12 col-12">
-                <h2 class="section-title text-black">Acerca de mí</h2>
-                <p class="text-justify">Me llamo Carlos Echeverria, tengo 22 años y me gusta lo simple. Soy un desarrollador web apasionado por la tecnología y estudiante junior de segundo año de ingeniería en informática en DuocUC. Me gusta estar ocupado haciendo proyectos, y siempre aprendo algo nuevo, incluso cuando las cosas no salen como esperaba. Desde pequeño, la tecnología ha sido mi pasión y disfruto resolver problemas y entender cómo funcionan las cosas.</p>
-                <p class="text-justify">Además de mi interés por la tecnología, soy scout y dirigente de la bandada Quillahua, donde fomento valores de respeto y colaboración entre niñas y jóvenes. También tengo una trayectoria en la música, habiendo cursado dos años de interpretación musical con mención en percusión, y actualmente formo parte de una orquesta juvenil regional especializada en música clásica.</p>
-                <p class="text-justify">Me considero una persona adaptable, creativa y empática, con una fuerte capacidad para resolver problemas de manera calmada y detallada, mientras disfruto del proceso de aprendizaje y crecimiento continuo.</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-10 col-sm-12 col-12">
-                <h2 class="section-title text-black">Habilidades</h2>
-                <ul>
-                    <li>Frontend: Bootstrap, Ionic</li>
-                    <li>Backend: Django</li>
-                    <li>Bases de datos: Oracle</li>
-                    <li>Lenguajes: Python (nivel junior)</li>
-                    <li>Intereses adicionales: Hackintosh</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-10 col-sm-12 col-12">
-                <h2 class="section-title text-black">Proyectos</h2>
-                <p class="text-justify"><strong>RegistrAPP:</strong> Actualmente trabajando en un proyecto para mi clase de aplicaciones móviles, una aplicación de registro llamada RegistrAPP. Puedes ver el proyecto en mi <a href="https://github.com/CharlesLettuce/RegistrAPP" target="_blank">GitHub</a>.</p>
-                <p class="text-justify"><strong>Portafolio personal:</strong> Este mismo portafolio es parte de mis proyectos, construido utilizando Bootstrap y otras tecnologías frontend.</p>
-                <p class="text-justify"><strong>Mini juego de matemáticas:</strong> He creado un mini juego totalmente hecho en JavaScript para resolver problemas matemáticos. Puedes jugarlo <a href="https://game.charleslettuce.me" target="_blank">aqui</a>.</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-10 col-sm-12 col-12">
-                <h2 class="section-title text-black">Contacto</h2>
-                <p class="text-justify">Si quieres saber más sobre mis proyectos o trabajar conmigo, no dudes en contactarme:</p>
-                <ul>
-                    <li>Email: <a href="mailto:carlos.echeverria.moscoso@gmail.com">carlosecheverria10@icloud.com</a></li>
-                    <li>GitHub: <a href="https://github.com/ElegantCharles" target="_blank">ElegantCharles</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/carlosecheverriamoscoso" target="_blank">Carlos Echeverria</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Sección oculta para mostrar la base de datos -->
-        <div id="db-section" class="d-none">
-            <h2 class="text-center">Usuarios</h2>
-            <div id="usuarios" class="mt-4"></div>
-        </div>
+    <div class="section">
+      <div class="section-title">Acerca de mí</div>
+      <p>Soy un desarrollador web apasionado y estudiante de ingeniería en informática en DuocUC. Me motiva crear proyectos útiles, aprender constantemente y mantener una mentalidad simple y enfocada.</p>
+      <p>Mi trasfondo también incluye liderazgo en grupos scouts y experiencia musical en orquestas juveniles. Estas vivencias me han dado habilidades blandas como adaptabilidad, empatía y trabajo en equipo.</p>
     </div>
 
-    <script>
-        async function fetchUsuarios() {
-            const response = await fetch('https://charleslettuce.me/bd/usuarios');
-            const usuarios = await response.json();
-            const usuariosDiv = document.getElementById('usuarios');
-            usuariosDiv.innerHTML = ''; // Clear previous content
-            usuarios.forEach(usuario => {
-                const usuarioDiv = document.createElement('div');
-                usuarioDiv.className = 'card mb-3';
-                usuarioDiv.innerHTML = `
-                    <div class="card-body">
-                        <h5 class="card-title">${usuario.usuario}</h5>
-                        <p class="card-text">Rol: ${usuario.rol}</p>
-                    </div>
-                `;
-                usuariosDiv.appendChild(usuarioDiv);
-            });
-        }
+    <div class="section">
+      <div class="section-title">Habilidades</div>
+      <ul>
+        <li>Frontend: Bootstrap, Ionic</li>
+        <li>Backend: Django</li>
+        <li>Bases de datos: Oracle</li>
+        <li>Lenguajes: Python (nivel junior)</li>
+        <li>Intereses adicionales: Hackintosh</li>
+      </ul>
+    </div>
 
-        // Mostrar la sección de base de datos si la URL es /bd
-        if (window.location.pathname === '/bd') {
-            document.getElementById('db-section').classList.remove('d-none');
-            fetchUsuarios();
-        }
-    </script>
+    <div class="section">
+      <div class="section-title">Proyectos</div>
+      <ul>
+        <li><strong>RegistrAPP:</strong> App de registro para clase de móviles. <a href="https://github.com/CharlesLettuce/RegistrAPP" target="_blank">Ver en GitHub</a>.</li>
+        <li><strong>Portafolio personal:</strong> Esta misma página construida con Bootstrap y HTML.</li>
+        <li><strong>Mini juego de matemáticas:</strong> Juego en JavaScript. <a href="https://game.charleslettuce.me" target="_blank">Probar aquí</a>.</li>
+      </ul>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="section">
+      <div class="section-title">Contacto</div>
+      <ul>
+        <li>Email: <a href="mailto:carlosecheverria10@icloud.com">carlosecheverria10@icloud.com</a></li>
+        <li>GitHub: <a href="https://github.com/ElegantCharles" target="_blank">ElegantCharles</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/carlosecheverriamoscoso" target="_blank">Carlos Echeverría</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
